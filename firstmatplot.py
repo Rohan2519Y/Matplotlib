@@ -26,5 +26,8 @@ Z = [200, 300, 400, 500, 600]
 
 # plt.scatter(X, Y, c=[10, 20, 30, 40, 50], s=50, marker='*', cmap='viridis')
 
-plt.pie(Y, labels=X, autopct='%.2f%%', explode=[0.4, 0.4, 0, 0, 0], shadow=False, radius=1.3, startangle=30, wedgeprops={"edgecolor":'black'})
+# plt.pie(Y, labels=X, autopct='%.2f%%', explode=[0.4, 0.4, 0, 0, 0], shadow=False, radius=1, startangle=30, wedgeprops={"edgecolor":'black'})
+plt.pie(Y, labels=X, autopct='%.2f%%',shadow=False, radius=1, startangle=30, wedgeprops={"edgecolor":'black'})
+plt.pie([1], colors = 'w', radius=0.7)
+plt.legend(loc = 'upper right', bbox_to_anchor = (0.7, 0, 0.5, 1))
 plt.show()
